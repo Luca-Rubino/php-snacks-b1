@@ -1,6 +1,6 @@
 <?php
 
-$array = [
+$arrays = [
     "chiave0" => [
         '0a','0b','0c','0d',
     ],
@@ -14,11 +14,6 @@ $array = [
     ]
 ];
 
-foreach ($array as "chiave0" => 0) {
-    echo $array;
-}
-
-
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +24,7 @@ foreach ($array as "chiave0" => 0) {
     <title>Php-snacks-B1</title>
 </head>
 <body>
-    <p><?php echo $array["chiave0"];  ?></p>
+    <p><?php echo $array['chiave0'];  ?></p>
     <p><?php echo $array["chiave1"];  ?></p>
     <p><?php echo $array["chiave2"];  ?></p>
 </body>
