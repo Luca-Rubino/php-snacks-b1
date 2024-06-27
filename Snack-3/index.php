@@ -49,6 +49,16 @@ $post = [
 
 ];
 
-// echo $post;
-
 ?>
+
+<h1> Lista Post </h1>
+
+<?php foreach ($post as $data => $postPerData) { ?>
+    <h2> <?php echo $data; ?> </h2>
+    <?php foreach ($postPerData as $postPerData) { ?>
+     <p> <?php echo $postPerData['title']; ?> </p> 
+     <p> <?php echo $postPerData['author']; ?> </p>
+     <p> <?php echo $postPerData['text']; ?> </p>
+     <br>
+    <?php }; ?>
+<?php }; ?>
