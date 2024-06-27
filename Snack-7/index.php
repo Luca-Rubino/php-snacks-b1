@@ -19,3 +19,10 @@ $alunni = [
 ];
 
 ?>
+
+<h2> Voti studenti </h2>
+
+<?php foreach ($alunni as $nomi => $voti) { ?>
+    <p> <?php echo $nomi ?> </p>
+    <p> Media dei voti: <?php echo $nomi ?> </p>
+<?php } ?>
