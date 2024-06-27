@@ -24,5 +24,5 @@ $alunni = [
 
 <?php foreach ($alunni as $nomi => $voti) { ?>
     <p> <?php echo $nomi ?> </p>
-    <p> Media dei voti: <?php echo $nomi ?> </p>
+    <p> Media dei voti: <?php echo $voti[0]. ' '. $voti[1]. ' '. $voti[2]. ' '. $voti[3]. ' '. $voti[4]; ?> </p>
 <?php } ?>
