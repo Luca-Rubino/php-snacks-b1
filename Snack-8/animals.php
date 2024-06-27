@@ -54,3 +54,13 @@ $animali = [
 ];
 
 ?>
+
+<?php foreach ($animali as $animale) { ?>
+<ul>
+
+    <li> <?php echo 'nome:'. ' '. $animale['nome'] ?> </li>
+    <li> <?php echo 'specie:'. ' '. $animale['specie'] ?> </li>
+    <li> <?php echo 'classe:'. ' '. $animale['classe'] ?> </li>
+
+</ul> 
+<?php } ?>
