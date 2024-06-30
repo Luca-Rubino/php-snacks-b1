@@ -1,15 +1,6 @@
 <?php
 
 
-$eta =  intval($_GET["eta"]);
-
-
-isset($_GET["eta"]);
-echo $eta;
-
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +8,7 @@ echo $eta;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Es2</title>
+    <title>Snack-2</title>
 </head>
 <body>
     
