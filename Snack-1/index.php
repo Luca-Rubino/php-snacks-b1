@@ -5,24 +5,34 @@
 
 
 $partite = [
-    "Olimpia Milano - Cantù" => [
-        '55-60',
+    [
+        "squadra-casa" => "Olimpia Milano",
+        "squadra-ospite" =>  "Cantù",
+        "punteggio" => "55-60",
     ],
     
-    "Bankstown Bruins - Manly W." => [
-        '68-60',
+    [
+        "squadra-casa" => "Bankstown Bruins",
+        "squadra-ospite" =>  "Manly W.",
+        "punteggio" => "68-60",
     ],
     
-    "Venezia - Virtus Bologna" => [
-        '81-96',
+    [
+        "squadra-casa" => "Venezia",
+        "squadra-ospite" =>  "Virtus Bologna",
+        "punteggio" => "81-96",
     ],
 
-    "Brescia - Pistoia" => [
-        '97-75',
+    [
+        "squadra-casa" => "Brescia",
+        "squadra-ospite" =>  "Pistoia",
+        "punteggio" => "97-75",
     ],
 
-    "Treviso - Tortona" => [
-        '87-74',
+    [
+        "squadra-casa" => "Treviso",
+        "squadra-ospite" =>  "Tortona",
+        "punteggio" => "87-74",
     ],
 ];
 
@@ -37,8 +47,8 @@ $partite = [
 </head>
 <body>
     <ul>
-    <?php foreach ($partite as $key => $value) { ?>
-        <li><?php echo  $partite[$key];?></li>
+    <?php foreach ($partite as $partite) { ?>
+        <li><?php echo $partite["squadra-casa"] . " " . "-" . " " . $partite["squadra-ospite"] . "\ " . $partite["punteggio"] . ".";?></li>
     <?php } ?>
     </ul>   
 </body>
