@@ -9,13 +9,21 @@ $partite = [
         '55-60',
     ],
     
-    "Olimpia Milano - Cantù" => [
-        '55-60',
+    "Bankstown Bruins - Manly W." => [
+        '68-60',
     ],
     
-    "Olimpia Milano - Cantù" => [
-        '55-60',
-    ]
+    "Venezia - Virtus Bologna" => [
+        '81-96',
+    ],
+
+    "Brescia - Pistoia" => [
+        '97-75',
+    ],
+
+    "Treviso - Tortona" => [
+        '87-74',
+    ],
 ];
 
 ?>
@@ -28,12 +36,10 @@ $partite = [
     <title>Php-snacks-B1</title>
 </head>
 <body>
-
-    <?php foreach ($variable as $key => $value) { ?>
-        <p><?php echo $partite['chiave0'];  ?></p>
-        <p><?php echo $partite["chiave1"];  ?></p>
-        <p><?php echo $partite["chiave2"];  ?></p>
+    <ul>
+    <?php foreach ($partite as $key => $value) { ?>
+        <li><?php echo  $partite[$key];?></li>
     <?php } ?>
-    
+    </ul>   
 </body>
 </html>
